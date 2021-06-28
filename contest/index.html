@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="The first CTF-style contest for radio hackers and enthusiasts!" />
+    <meta name="keywords" content="cts,capture,signal,cts,flag,rf,radio,frequency,re,reverse,engineering,trendmicr,contest,competition,hacking" />
+    <meta name="author" content="© 2019 Trend Micro Research" />
+    <link rel="shortcut icon" type="image/png" href="/cts/logo/icons/favpng.png">
+
+    <title>The Contest | Capture the Signal </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+    <link href="/cts/css/style.css" rel="stylesheet" />
+    <link href="/cts/css/nav.css" rel="stylesheet" />
+    <link href="/cts/css/misc.css" rel="stylesheet" />
+    <link href="/cts/css/embed.css" rel="stylesheet" />
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Capture the Signal" />
+    <meta property="og:url" content="https://trendmicro.com/cts/" />
+    <meta property="og:description" content="The first CTF-style contest for radio hackers and enthusiasts!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SignalCapture" />
+    <meta name="twitter:creator" content="@phretor" />
+    <meta name="twitter:image" content="/cts/logo/logo.png" />
+</head>
+<body>
+<div class="main-centered" id="mainmenu">
+    <ul class="menu" style="background-image: url(/cts/logo/icons/facebook.png);">
+    
+        <li class="menu">
+            <a class="nes-btn is-warning" title="Home" href="/cts/">Home</a>
+        </li>
+    
+        <li class="menu">
+            <a class="nes-btn is-warning" title="Contest" href="/cts/contest">Contest</a>
+        </li>
+    
+        <li class="menu">
+            <a class="nes-btn is-warning" title="Past" href="/cts/past">Past</a>
+        </li>
+    
+        <li class="menu">
+            <a class="nes-btn is-warning" title="Downloads" href="/cts/downloads">Downloads</a>
+        </li>
+    
+        <li class="menu">
+            <a class="nes-btn is-warning" title="Organizers" href="/cts/organizers">Organizers</a>
+        </li>
+    
+    </ul>
+</div>
+
+<section class="nes-container with-title main-centered">
+
+  <h1>The Contest</h1>
+  
+
+<p><strong>IMPORTANT:</strong> Each edition of the CTS may have specific rules. Consider this page as a high-level overview of the game overall, and follow the instructions given at the specific edition you&rsquo;re playing!</p>
+
+<hr />
+
+<p>Contestants should use their RF-hacking kung fu and tools like
+<a href="https://www.gnuradio.org/">GNURadio</a>, <a href="https://github.com/csete/gqrx">GQRX</a>,
+<a href="https://github.com/jopohl/urh">URH</a>, Python, C, black magic, to examine
+a series of increasingly complex radio signals to extract key information
+leading them to the next signal.</p>
+
+<h2 id="scoring">Scoring</h2>
+
+<p>The more challenges you solve, the more points you gain. Points for challenges
+are statically assigned and are proportional to the difficulty of the
+challenge. The first participants to solve a challenge will receive higher
+number of points.</p>
+
+<p>At the end of the competition, the team with highest total points will be named
+the winner. In the case of two different teams having the same points,
+whichever team was quickest to reach this high score will be declared the
+champion.</p>
+
+<h2 id="format-of-the-game">Format of the Game</h2>
+
+<ul>
+<li><p>We usually direct the contestants to an entry signal by supplying frequency, and IP:port they can connect to. The contestants would tune to this frequency, or connect to the server, and stream the RF data into their toolchain.</p></li>
+
+<li><p>The first and second signal could be processed using basic signal analysis techniques. Hidden in the signal, the players will find the next hint (e.g., the “frequency” of the next signal to examine and/or other clues to the final flag).</p></li>
+
+<li><p>The third signal will contain encoded data, likely with simple digital encodings, and the decoded digital data will contain the next hint.</p></li>
+
+<li><p>The challenge will continue in this fashion with an increasingly difficult set of digital signals to demodulate and decode.</p></li>
+
+<li><p>In the future, final stages will require encoding the discovered flag with a specific modulation and transmitting it on the right exit frequency (or IP:port) eventually discovered in the previous steps.</p></li>
+</ul>
+
+<h2 id="things-to-bring">Things to Bring</h2>
+
+<ul>
+<li>Laptop with VMware Player or equivalent</li>
+<li>Network cables and power sockets</li>
+<li>SDR equipment like RTL-SDR, BladeRF, HackRF or USRP (optional)</li>
+<li>4G Router for your own dedicated Internet access (optional)</li>
+</ul>
+
+<h2 id="rules">Rules</h2>
+
+<p>We try hard to keep the competition as free and exciting as possible; however
+we do require teams to adhere to a few simple rules:</p>
+
+<ol>
+<li><p>The use of radio equipment is optional. Should anyone, for some reason, decide to use radio equipment, they will do so under their responsibility and must adhere to the local law (regulations) on the matter of RF operations.</p></li>
+
+<li><p>Show up on time or you’ll miss the briefing!</p></li>
+
+<li><p>No cooperation between teams with independent accounts. Sharing of solutions or providing revealing hints to other teams is cheating: don&rsquo;t do it!</p></li>
+
+<li><p>No attacking the competition infrastructure. If bugs or vulns are found, please alert the competition organizers immediately. Hint: you might get free hints for responsible disclosure.
+Absolutely no sabotaging of other competing teams using SE or physical attacks, or in any way hindering their independent competition progress.</p></li>
+
+<li><p>No brute forcing of challenge flag/ keys against the scoring server.</p></li>
+
+<li><p>DoS of the CTF platform or any of the jeopardy challenges services will not be tolerated.</p></li>
+
+<li><p>All participants must obey to PIT STOP calls. PIT STOP calls are rest intervals where all the players must leave the CTF area to facilitate for the CTF Crew to perform maintenance work.Teams who don&rsquo;t adhere to the rules will be penalized or disqualified from the competition.</p></li>
+</ol>
+
+<p>The organizer reserves the right to dispatch long-term (&gt;1 year) all CTS contest bans.
+At all times, the decision of the CTS organizing crew (and host event) is final on any matter in question.</p>
+
+</section>
+
+<footer>
+    <p>
+        <span>©2018–2020</span>
+        <a href="https://trendmicro.com/" target="_blank" rel="noopener">Trend Micro, Inc.</a>
+        <span>-</span>
+        <a href="https://twitter.com/trendmicrorsrch" target="_blank" rel="noopener">@TrendMicroRSRCH</a>
+    </p>
+</footer>
+
+</body>
+</html>
+

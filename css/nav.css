@@ -1,0 +1,17 @@
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 100px;
+  margin-bottom: 10px;
+}
+
+li.menu {
+  float: left;
+  margin: 8px;
+}
+
