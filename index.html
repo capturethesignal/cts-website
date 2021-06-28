@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="generator" content="Hugo 0.55.2" />
+	<meta name="generator" content="Hugo 0.70.0" />
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +9,16 @@
     <meta name="description" content="The first CTF-style contest for radio hackers and enthusiasts!" />
     <meta name="keywords" content="cts,capture,signal,cts,flag,rf,radio,frequency,re,reverse,engineering,trendmicr,contest,competition,hacking" />
     <meta name="author" content="© 2019 Trend Micro Research" />
-    <link rel="shortcut icon" type="image/png" href="/cts/logo/icons/favpng.png">
+    <link rel="shortcut icon" type="image/png" href="/logo/icons/favpng.png">
 
     <title>Capture the Signal | Capture the Signal </title>
 
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-    <link href="/cts/css/style.css" rel="stylesheet" />
-    <link href="/cts/css/nav.css" rel="stylesheet" />
-    <link href="/cts/css/misc.css" rel="stylesheet" />
-    <link href="/cts/css/embed.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/misc.css" rel="stylesheet" />
+    <link href="/css/embed.css" rel="stylesheet" />
 
 
     <meta property="og:type" content="website" />
@@ -28,30 +28,30 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@SignalCapture" />
     <meta name="twitter:creator" content="@phretor" />
-    <meta name="twitter:image" content="/cts/logo/logo.png" />
+    <meta name="twitter:image" content="/logo/logo.png" />
 </head>
 <body>
 <div class="main-centered" id="mainmenu">
-    <ul class="menu" style="background-image: url(/cts/logo/icons/facebook.png);">
+    <ul class="menu" style="background-image: url(/logo/icons/facebook.png);">
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Home" href="/cts/">Home</a>
+            <a class="nes-btn is-warning" title="Home" href="/">Home</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Contest" href="/cts/contest">Contest</a>
+            <a class="nes-btn is-warning" title="Contest" href="/contest">Contest</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Past" href="/cts/past">Past</a>
+            <a class="nes-btn is-warning" title="Past" href="/past">Past</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Downloads" href="/cts/downloads">Downloads</a>
+            <a class="nes-btn is-warning" title="Downloads" href="/downloads">Downloads</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Organizers" href="/cts/organizers">Organizers</a>
+            <a class="nes-btn is-warning" title="Organizers" href="/organizers">Organizers</a>
         </li>
     
     </ul>
@@ -60,60 +60,34 @@
 <section class="nes-container with-title main-centered">
 
 <div class="home-splash">
-    <img src="/cts/images/fosphor.jpg" />
+    <img src="/images/fosphor.jpg" />
 </div>
-
-
-<h1 id="capture-the-signal">Capture the Signal!</h1>
-
 <p>Capture the Signal (CTS) is a new challenge-based CTF that focuses exclusively
 on the reverse engineering of radio signals. This activity is also known as
 &ldquo;blind signal analysis&rdquo; as the signals&rsquo; specification are unknown to the attacker.</p>
-
-<p>This contest is organized by renowned community radio-hackers for researchers,
-hackers, and practitioners in the field!</p>
-
-<h2 id="news">News</h2>
-
-<p>We have been invited to join <a href="https://hardwear.io/">HARDWEAR.IO USA 2020</a>. We will run a virtual-only
-contest on April 30th (10AM-2PM PDT) and May 1st (10AM-12:30PM PDT). Registration
-is required. All information on the <a href="https://www.trendmicro.com/cts/hwio2020/">contest webpage</a>.</p>
-
-<p>Follow our <a href="https://twitter.com/SignalCapture">Twitter account</a> for more recent news :-)</p>
-
-<h2 id="how-does-it-work">How does it Work?</h2>
-
-<p>Contestants should use their RF-hacking kung fu and tools like
-<a href="https://www.gnuradio.org/">GNURadio</a>, <a href="https://github.com/csete/gqrx">GQRX</a>,
-<a href="https://github.com/jopohl/urh">URH</a>, Python, C, black magic, to examine
-a series of increasingly complex radio signals to extract key information
-leading them to the final, exit signal.</p>
-
-<p>The game is hosted on site at conferences world-wide. The radio signals will be
+<p>In normal circumstances, the game is hosted on site at conferences world-wide, where our radio signals are
 distributed &ldquo;over IP&rdquo;. The use of IP eliminates the complexity of deploying
-actual radios and transmitting RF over the air. We use GNURadio for that.</p>
-
-<p>GNURadio natively supports the tunneling of signals via ZeroMQ, so that the
-players can focus on the real challenge: reverse engineer the protocols without
-bothering the distribution of the signals. For the same reason, we provide
-ready-to-use scripts to remotely access the radio streams, as setting up the
-GNURadio toolchain is time consuming and is not relevant to the core of the challenge.</p>
-
-<p>We also provide a VM image with all needed software to reverse engineer the signals.
-Of course, participants are welcome in using their own setup.</p>
-
+actual radios and transmitting RF over the air.</p>
 <p>Each radio signal corresponds to a challenge. The challenges are sorted by difficulty,
 and each solved challenge gives you access to the next one. In other words, the flag
-contained in each signal represents the clue to the next radio signal.</p>
-
+contained in each signal represents the clue to the next radio signal. The more points
+are scored, the closer the contestant is to win.</p>
 <p>Participants are also welcome to use Software Defined Radio (SDR) equipment to
-interact directly with RF signals over-the-air.</p>
+interact directly with RF signals over the air.</p>
+<p>This contest is organized by renowned community radio-hackers for researchers,
+hackers, and practitioners in the field!</p>
+<h2 id="news">News</h2>
+<p>We have been invited to join <a href="https://cyberweek.ae/2020/">HITB+ CyberWeek 2020</a>.
+We will run a virtual-only content simultaneously with the afternoon sessions of
+the 2-days conference, i.e. on November 18th and 19th (13:00 - 18:00 agenda time: GMT+4).
+All information on the <a href="hitb2020/">contest webpage</a>.</p>
+<p>Follow our <a href="https://twitter.com/SignalCapture">Twitter account</a> for more recent news :-)</p>
 
 </section>
 
 <footer>
     <p>
-        <span>©2018–2020</span>
+        <span>©2018–2021</span>
         <a href="https://trendmicro.com/" target="_blank" rel="noopener">Trend Micro, Inc.</a>
         <span>-</span>
         <a href="https://twitter.com/trendmicrorsrch" target="_blank" rel="noopener">@TrendMicroRSRCH</a>

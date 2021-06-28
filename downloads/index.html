@@ -8,16 +8,16 @@
     <meta name="description" content="The first CTF-style contest for radio hackers and enthusiasts!" />
     <meta name="keywords" content="cts,capture,signal,cts,flag,rf,radio,frequency,re,reverse,engineering,trendmicr,contest,competition,hacking" />
     <meta name="author" content="© 2019 Trend Micro Research" />
-    <link rel="shortcut icon" type="image/png" href="/cts/logo/icons/favpng.png">
+    <link rel="shortcut icon" type="image/png" href="/logo/icons/favpng.png">
 
     <title>Downloads | Capture the Signal </title>
 
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-    <link href="/cts/css/style.css" rel="stylesheet" />
-    <link href="/cts/css/nav.css" rel="stylesheet" />
-    <link href="/cts/css/misc.css" rel="stylesheet" />
-    <link href="/cts/css/embed.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/misc.css" rel="stylesheet" />
+    <link href="/css/embed.css" rel="stylesheet" />
 
 
     <meta property="og:type" content="website" />
@@ -27,30 +27,30 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@SignalCapture" />
     <meta name="twitter:creator" content="@phretor" />
-    <meta name="twitter:image" content="/cts/logo/logo.png" />
+    <meta name="twitter:image" content="/logo/logo.png" />
 </head>
 <body>
 <div class="main-centered" id="mainmenu">
-    <ul class="menu" style="background-image: url(/cts/logo/icons/facebook.png);">
+    <ul class="menu" style="background-image: url(/logo/icons/facebook.png);">
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Home" href="/cts/">Home</a>
+            <a class="nes-btn is-warning" title="Home" href="/">Home</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Contest" href="/cts/contest">Contest</a>
+            <a class="nes-btn is-warning" title="Contest" href="/contest">Contest</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Past" href="/cts/past">Past</a>
+            <a class="nes-btn is-warning" title="Past" href="/past">Past</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Downloads" href="/cts/downloads">Downloads</a>
+            <a class="nes-btn is-warning" title="Downloads" href="/downloads">Downloads</a>
         </li>
     
         <li class="menu">
-            <a class="nes-btn is-warning" title="Organizers" href="/cts/organizers">Organizers</a>
+            <a class="nes-btn is-warning" title="Organizers" href="/organizers">Organizers</a>
         </li>
     
     </ul>
@@ -59,71 +59,50 @@
 <section class="nes-container with-title main-centered">
 
   <h1>Downloads</h1>
-  
-
-<p>In this page you can find some useful downloads.</p>
-
+  <p>In this page you can find some useful downloads.</p>
 <h2 id="virtual-machine-disk-images">Virtual machine disk images</h2>
-
 <ul>
-<li><p><strong>VMDK:</strong></p>
-
+<li>
+<p><strong>VMDK:</strong></p>
 <ul>
 <li><a href="https://tm-ftr-cts-ap-northeast-1.s3-ap-northeast-1.amazonaws.com/cts/downloads/vms/cts-micro.vmdk.7z">JP Mirror (VMDK)</a></li>
 <li><a href="https://ct-ftr-cts-hwio2020-eu-central-1.s3.eu-central-1.amazonaws.com/VMs/cts-micro.vmdk.7z">EU Mirror (VMDK)</a></li>
-</ul></li>
-
-<li><p><strong>VDI:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>VDI:</strong></p>
 <ul>
 <li><a href="https://tm-ftr-cts-ap-northeast-1.s3-ap-northeast-1.amazonaws.com/cts/downloads/vms/cts-micro.vdi.7z">JP Mirror (VDI)</a></li>
 <li><a href="https://ct-ftr-cts-hwio2020-eu-central-1.s3.eu-central-1.amazonaws.com/VMs/cts-micro.vdi.7z">EU Mirror (VDI)</a></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>Checksums (SHA 256) are as follows:</p>
-
 <pre><code>639c3ffa7b66edb1e9b1854c14498c70a1a0efa23503c1c9b9d3621b68d2f11f (cts-micro.vdi.7z)
 13c701a3d7804b6d78383787fe709641d6d2f80e2270e871f3e5f716c6fd06d0 (cts-micro.vmdk.7z)
-</code></pre>
-
-<p>Both VMs are identical and based on Ubuntu 18.04 with Xfce4. They&rsquo;ll expand to about 4.5GB disk image files and exect a legacy BIOS boot.</p>
-
+</code></pre><p>Both VMs are identical and based on Ubuntu 18.04 with Xfce4. They&rsquo;ll expand to about 4.5GB disk image files and exect a legacy BIOS boot.</p>
 <p>Both disk images are encrypted with a password that is provided during contests.</p>
-
 <h3 id="cts-tools">CTS Tools</h3>
-
 <p>These VMs do not come with CTS client tools, or come with a likely outdated version of them. Make sure you <a href="https://github.com/capturethesignal/cts-tools">grab a copy of the most recent tools</a>.</p>
-
 <h3 id="decompressing">Decompressing</h3>
-
-<pre><code class="language-bash">$ 7z x &lt;image&gt;.7z
-</code></pre>
-
-<p>And you will be asked for the password. <strong>Note:</strong> this is <code>7z</code> not <code>p7zip</code>!</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ 7z x &lt;image&gt;.7z
+</code></pre></div><p>And you will be asked for the password. <strong>Note:</strong> this is <code>7z</code> not <code>p7zip</code>!</p>
 <h3 id="how-to-create-vms-out-of-these-disk-images">How to create VMs out of these disk images</h3>
-
 <p>Just create a &ldquo;custom&rdquo; VM and point VMware/VirtualBox to the existing disk. More details:</p>
-
 <ul>
 <li>VMware: <a href="https://kb.vmware.com/s/article/1023555">https://kb.vmware.com/s/article/1023555</a></li>
 <li>VirtualBox: <a href="https://www.virtualbox.org/manual/UserManual.html#vdidetails">https://www.virtualbox.org/manual/UserManual.html#vdidetails</a></li>
 </ul>
-
 <h3 id="guest-additions">Guest additions</h3>
-
 <p>They have Open VM Tools (e.g., VMWare guest additions) installed, so you may want to use the VMDK with VMWware Player (or Workstation, or Fusion), unless you really want to use VirtualBox: in the latter case, you may need to remove Open VM Tools and install VirtualBox Guest Additions.</p>
-
 <h3 id="networking">Networking</h3>
-
 <p>Just <code>sudo dhclient &lt;adapter name&gt;</code> (auto-completion should work).</p>
 
 </section>
 
 <footer>
     <p>
-        <span>©2018–2020</span>
+        <span>©2018–2021</span>
         <a href="https://trendmicro.com/" target="_blank" rel="noopener">Trend Micro, Inc.</a>
         <span>-</span>
         <a href="https://twitter.com/trendmicrorsrch" target="_blank" rel="noopener">@TrendMicroRSRCH</a>
