@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?port=39637&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,13 +80,9 @@
 <p>Checksums (SHA 256) are as follows:</p>
 <pre><code>639c3ffa7b66edb1e9b1854c14498c70a1a0efa23503c1c9b9d3621b68d2f11f (cts-micro.vdi.7z)
 13c701a3d7804b6d78383787fe709641d6d2f80e2270e871f3e5f716c6fd06d0 (cts-micro.vmdk.7z)
-</code></pre><p>Both VMs are identical and based on Ubuntu 18.04 with Xfce4. They&rsquo;ll expand to about 4.5GB disk image files and exect a legacy BIOS boot.</p>
-<p>Both disk images are encrypted with a password that is provided during contests.</p>
-<h3 id="cts-tools">CTS Tools</h3>
-<p>These VMs do not come with CTS client tools, or come with a likely outdated version of them. Make sure you <a href="https://github.com/capturethesignal/cts-tools">grab a copy of the most recent tools</a>.</p>
-<h3 id="decompressing">Decompressing</h3>
+</code></pre><p>Both VMs are identical and based on Ubuntu 18.04 with Xfce4. Decompress with:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ 7z x &lt;image&gt;.7z
-</code></pre></div><p>And you will be asked for the password. <strong>Note:</strong> this is <code>7z</code> not <code>p7zip</code>!</p>
+</code></pre></div><p>And you will be asked for the password (provided by the organizers <em>during</em> the contest). <strong>Note:</strong> this is <code>7z</code> not <code>p7zip</code>!</p>
 <h3 id="how-to-create-vms-out-of-these-disk-images">How to create VMs out of these disk images</h3>
 <p>Just create a &ldquo;custom&rdquo; VM and point VMware/VirtualBox to the existing disk. More details:</p>
 <ul>
@@ -95,8 +91,10 @@
 </ul>
 <h3 id="guest-additions">Guest additions</h3>
 <p>They have Open VM Tools (e.g., VMWare guest additions) installed, so you may want to use the VMDK with VMWware Player (or Workstation, or Fusion), unless you really want to use VirtualBox: in the latter case, you may need to remove Open VM Tools and install VirtualBox Guest Additions.</p>
-<h3 id="networking">Networking</h3>
-<p>Just <code>sudo dhclient &lt;adapter name&gt;</code> (auto-completion should work).</p>
+<h2 id="cts-tools">CTS Tools</h2>
+<p>These VMs do <em>not</em> come with CTS client tools, or come with a likely outdated version of them. Make sure you <a href="https://github.com/capturethesignal/cts-tools">grab a copy of the most recent tools</a>. We suggest to use these tools to connect to the steaming server, receive the challenge signals and begin your reverse engineering :-)</p>
+<h2 id="running-your-own-local-ctf-contest">Running your own, local CTF contest</h2>
+<p>During Black Hat USA Arsenal 2021, we released the backend system that you can use to run your own CTS. This includes the scripts for setting up the streaming server and a demo signal you could use for testing and as &ldquo;baseline&rdquo; for creating your own challenges. Take a look at the <a href="https://github.com/capturethesignal/cts-backend">repo here</a></p>
 
 </section>
 
